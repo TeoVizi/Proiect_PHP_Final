@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: #f1f1f1; 
+    padding: 10px 15px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.header a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.header button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: #0056b3;
+}
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 20px auto;
+}
+
+.home-container {
+    margin-top: 1rem;
+    background-color: lightgrey;
+}
+
+.logout-btn {
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.logout-form {
+    margin: 0; /* Reset margin */
+}
+
+.logout-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    background-color: darkblue;
+}
+
+.film-row {
+    display: flex;
+    flex-wrap: wrap; /* Permite elementelor să treacă pe rândul următor */
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.film-box {
+    position: relative;
+    margin: 10px;
+    border: 1px solid black;
+    width: 200px; /* Lățime inițială */
+    height: 300px; /* Înălțime inițială */
+}
+
+/* Responsivitate pentru ecrane mici (ex: telefoane mobile) */
+@media (max-width: 600px) {
+    .film-box {
+        width: 100%; /* Pe ecranele mici, box-urile vor ocupa întreaga lățime */
+    }
+    .film-info {
+        padding: 5px; /* Spațiere mai mică pentru text pe ecrane mici */
+    }
+}
+
+/* Responsivitate pentru tablete și ecrane mai mari */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .film-box {
+        width: 45%; /* Pe ecrane medii, două box-uri pe rând */
+    }
+}
+
+
+
+.film-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+}
+
+.plus-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.film-title {
+    font-weight: bold;
+}
+
+/* Add responsiveness and other styles as needed */
